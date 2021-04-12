@@ -7,7 +7,7 @@ html, body {
 }
 .banner {
     position: relative;
-    background:url(/images/mainimages/backgroound.jpg);
+    background:url(/images/mainimages/background.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,15 +43,15 @@ html, body {
 }
 .banner> hgroup > h1{
     color: #fff;
-    font: 900 48px/60px arial;
-    font-family: 'Chilanka', cursive;
+    font: 900 37px/60px arial;
+  font-family: 'Train One', cursive;
     text-transform: uppercase;
     text-shadow: 0px 2px 3px rgba(0,0,0,.25); 
 }
 .banner > hgroup > h2{
     color: #fff;
-    font: 100 30px/36px arial;
-    font-family: 'Chilanka', cursive;
+    font: 50 30px/36px arial;
+    font-family: 'Train One', cursive;
     text-transform: capitalize;
     text-shadow: 0px 2px 3px rgba(0,0,0,.25);   
 }
@@ -63,6 +63,7 @@ html, body {
     padding: 9px 24px;
     color: #fff;
     font: 500 24px/36px arial;
+    font-family: 'Train One', cursive;
     text-transform: uppercase;
     text-decoration: none;
 }
