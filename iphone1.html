@@ -12,12 +12,14 @@
         <section>
             <h1>Clothes</h1>
             <div class="photo-gallery">
-                <div class="primary-photo" style="background-image: url(/images/menshoodies/menshoodie1.jpg); ">
+                <div class="primary-photo" style="background-image: url(/images/phonecase1/iphone123.jpg)">
                 </div>
-                <img src="images/menshoodies/menshoodie1.jpg"/>
-                <img src="/images/menshoodies/menshoodie2.jpg"/>
-                <img src="/images/menshoodies/menshoodie3.jpg"/>
-                <img src="/images/menshoodies/menshoodie4.jpg"/>
+                <img src="/images/phonecase1/iphone121.jpg">
+                <img src="images/phonecase1/iphone122.jpg"/>
+                <img src="/images/phonecase1/iphone123.jpg"/>
+                <img src="/images/phonecase1/iphone124.jpg"/>
+                <img src="/images/phonecase1/iphone125.jpg">
+              
             </div>
         </section>
     <section>
@@ -49,19 +51,13 @@
                 >Add To Cart</a>
             </form>
         </form>
-     </section>
-        </div>
-        <script type="text/javascript">
-            $( ".photo-gallery > img" ).click(function() {
-            var imgSrc= $(this).attr("src");
-            $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
-            });
-            $( ".product-details form input" ).change(function() {
-                var productSize= $(this).val();
-                $('.snipcart-add-item').attr('data-item-custom1-value',productSize);
-            });
-        </script>
-        <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
-        <div id="snipcart" data-config-modal-style="side" data-api-key="ZGQ4NGM0MDctZWU5OC00YzIxLWEzZjctODA4MjNkNjBjMDUzNjM3NDgzOTY2NzU2MjQyMzcx" hidden></div>
-    </body>
+    </section>
+    </div>
+</body>
+    <script type="text/javascript">
+$( ".photo-gallery > img" ).click(function() {
+var imgSrc= $(this).attr("src");
+$('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+});
+</script>
 </htlm>
