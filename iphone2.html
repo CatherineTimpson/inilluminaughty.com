@@ -27,16 +27,32 @@
         <p>description</p>
         <form>
             <label>
-                <input type="radio" name="size" value="small">
-                Small
+                <input type="radio" name="size" value="iphone11">
+                Iphone 11
             </label>
             <label>
-                <input type="radio" name="size" value="medium">
-                Medium
+                <input type="radio" name="size" value="iphone11pro">
+                Iphone 11Pro 
             </label>
             <label>
-                <input type="radio" name="size" value="large">
-                Large
+                <input type="radio" name="size" value="iphone11promax">
+                Iphone 11 Pro Max 
+            </label>
+            <label>
+                <input type="radio" name="size" value="iphone12">
+                Iphone 12 
+            </label>
+             <label>
+                <input type="radio" name="size" value="iphone12mini">
+                Iphone 12 Mini
+            </label>
+             <label>
+                <input type="radio" name="size" value="iphone12pro">
+                Iphone 12 Pro 
+            </label>
+             <label>
+                <input type="radio" name="size" value="iphone12promax">
+                Iphone 12 Pro Max 
             </label>
           <form>
                 <a class="btn snipcart-add-item" href="#"
@@ -52,12 +68,18 @@
             </form>
         </form>
     </section>
-    </div>
-</body>
-    <script type="text/javascript">
-$( ".photo-gallery > img" ).click(function() {
-var imgSrc= $(this).attr("src");
-$('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
-});
-</script>
+        </div>
+        <script type="text/javascript">
+            $( ".photo-gallery > img" ).click(function() {
+            var imgSrc= $(this).attr("src");
+            $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+            });
+            $( ".product-details form input" ).change(function() {
+                var productSize= $(this).val();
+                $('.snipcart-add-item').attr('data-item-custom1-value',productSize);
+            });
+        </script>
+        <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+        <div id="snipcart" data-config-modal-style="side" data-api-key="MTA0NzY1YTItNzg3OC00ZWRkLWFhMDUtNDQwMmQ4MTcxYjAwNjM3NDgzOTY4NDMwNDQzODQz" hidden></div>
+    </body>
 </htlm>
