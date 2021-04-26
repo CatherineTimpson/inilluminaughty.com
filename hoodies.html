@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.1.0/default/snipcart.css" />
 </head>
 <body>
     <div class="product-details">
@@ -20,38 +22,43 @@
                 <img src="/images/menshoodies/menshoodie4.jpg"/>
             </div>
         </section>
-    <section>
-        <h2>Men's Hoodie</h2>
-        <p>description</p>
-        <form>
-            <label>
-                <input type="radio" name="size" value="small">
-                Small
-            </label>
-            <label>
-                <input type="radio" name="size" value="medium">
-                Medium
-            </label>
-            <label>
-                <input type="radio" name="size" value="large">
-                Large
-            </label>
-          <form>
-                <a class="btn snipcart-add-item" href="#"
-                  data-item-id="Mascara001"
-                  data-item-price="5.00"
-                  data-item-url="/paintings/starry-night"
-                  data-item-description="Thick annoying black stuff"
-                  data-item-image="images/second%20pic.png"
-                  data-item-name="Mascara"
-                    data-item-custom1-name="Size"
-                   data-item-custom1-options="Small|Medium|Large"
-                >Add To Cart</a>
+        <section>
+            <h2>Men's Hoodie</h2>
+            <p>description</p>
+            <form>
+                <label>
+                    <input type="radio" name="size" value="small">
+                    Small
+                </label>
+                <label>
+                    <input type="radio" name="size" value="medium">
+                    Medium
+                </label>
+                <label>
+                    <input type="radio" name="size" value="large">
+                    Large
+                </label>
+              <form>
+                    <a class="btn snipcart-add-item" href="#"
+                      data-item-id="Mascara001"
+                      data-item-price="5.00"
+                      data-item-url="/paintings/starry-night"
+                      data-item-description="Thick annoying black stuff"
+                      data-item-image="images/second%20pic.png"
+                      data-item-name="Mascara"
+                        data-item-custom1-name="Size"
+                       data-item-custom1-options="Small|Medium|Large"
+                    >Add To Cart</a>
+                </form>
             </form>
-        </form>
-     </section>
-        </div>
-        <script type="text/javascript">
+         </section>
+    </div>
+        
+        
+        <script async src="https://cdn.snipcart.com/themes/v3.1.0/default/snipcart.js"></script>
+        <div id="snipcart" data-config-modal-style="side" data-api-key="MTA0NzY1YTItNzg3OC00ZWRkLWFhMDUtNDQwMmQ4MTcxYjAwNjM3NDgzOTY4NDMwNDQzODQz" hidden></div>
+    
+    <script type="text/javascript">
             $( ".photo-gallery > img" ).click(function() {
             var imgSrc= $(this).attr("src");
             $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
@@ -61,7 +68,5 @@
                 $('.snipcart-add-item').attr('data-item-custom1-value',productSize);
             });
         </script>
-        <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
-        <div id="snipcart" data-config-modal-style="side" data-api-key="MTA0NzY1YTItNzg3OC00ZWRkLWFhMDUtNDQwMmQ4MTcxYjAwNjM3NDgzOTY4NDMwNDQzODQz" hidden></div>
     </body>
 </htlm>
